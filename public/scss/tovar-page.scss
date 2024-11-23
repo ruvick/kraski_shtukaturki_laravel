@@ -1,0 +1,309 @@
+.tovarpage__banner {
+	position: relative;
+	padding: 60px 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+
+	h1 {
+		font-weight: 500;
+	}
+}
+
+.tovarinfo {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+
+	&__side {
+		width: 48%;
+
+		.swiper-slide {
+			display: flex;
+		}
+
+		.swiper-slide img {
+			max-width: 520px;
+			margin: auto;
+		}
+	}
+
+	.param {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-top: 40px;
+
+		&__element {
+			width: 48%;
+			border-bottom: 0.4px dotted #C6C6C6;
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 10px;
+			padding-bottom: 10px;
+
+			.icon {
+				width: 50px;
+				height: 50px;
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-image: url(../img/icons/tovar_param/pack.svg);
+
+				&__instrument {
+					background-image: url(../img/icons/tovar_param/instrument.svg);
+				}
+
+				&__rashod {
+					background-image: url(../img/icons/tovar_param/rashod.svg);
+				}
+
+				&__layers {
+					background-image: url(../img/icons/tovar_param/layers.svg);
+				}
+
+				&__pack {
+					background-image: url(../img/icons/tovar_param/pack.svg);
+				}
+
+				&__razvod {
+					background-image: url(../img/icons/tovar_param/razvod.svg);
+				}
+
+				&__sves {
+					background-image: url(../img/icons/tovar_param/sv.svg);
+				}
+			}
+
+			.text {
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+				margin-left: 20px;
+
+				* {
+					margin: auto 0;
+				}
+
+				span {
+					font-weight: bold;
+				}
+
+			}
+		}
+	}
+}
+
+.sales__action {
+	padding: 20px 0;
+	border-bottom: 0.4px dotted #C6C6C6;
+	display: flex;
+	justify-content: space-between;
+
+	.price {
+		flex: 1;
+		margin: auto 0;
+		white-space: nowrap;
+
+		&__main {
+			font-size: 24px;
+			font-weight: bold;
+		}
+
+		&__old {
+			font-size: 14px;
+			color: #C6C6C6;
+			text-decoration: line-through;
+		}
+	}
+
+	.like {
+		flex: 1;
+		max-width: 50px;
+	}
+
+	.sale_btn {
+		flex: 1;
+		margin-right: 0;
+	}
+}
+
+
+
+.product_page_section {
+	margin-bottom: 40px;
+}
+
+.textures {
+	// width: 100%;
+	display: flex;
+	// justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+
+	.texture_blk {
+		// width: 24%;
+		flex: 0 1 100%;
+
+		.img {
+			// height: 300px;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		.title {
+			text-align: left;
+			margin-top: 10px;
+
+			h3 {
+				font-size: 22px;
+				line-height: 1.3;
+			}
+
+		}
+	}
+}
+
+.texture-column {
+	display: flex;
+	flex: 0 1 25%;
+	padding: 0 10px 20px 10px;
+}
+
+.adv_list {
+    margin: 20px 0;
+    background-color: #EBEBEB;
+    padding: 20px 35px;
+    border-radius: 20px;
+
+    ul li {
+        margin: 10px 0;
+        position: relative;
+        padding-left: 20px;
+    }
+
+    li:before{
+        content:"";
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        left: 0;
+        top:calc(50% - 3px);
+        border-radius: 2px;
+        background-color: #CA9E67;
+    }
+}
+
+.pack_blk {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 0.4px dotted #C6C6C6;
+    padding-bottom: 20px;
+
+    .pack_blk_element {
+        display: flex;
+        flex:1;
+        .img_wrap{
+            flex: 1;
+        }
+
+        .text{
+            flex: 2;
+            min-width: 115px;
+            display: flex;
+            span {
+                margin: auto auto auto 30px;
+            }
+        }
+    }
+
+}
+
+// media
+
+@media (max-width: 915px) {
+	.texture-column {
+		flex: 0 1 33.333%;
+	}
+}
+
+@media (max-width: 830px) {
+	.tovarinfo .param__element {
+		width: 100%;
+	}
+
+	.sales__action {
+		flex-wrap: wrap;
+	}
+
+	.sales__action .price {
+		flex: 0 1 100%;
+		margin-bottom: 13px;
+	}
+}
+
+@media (max-width: 768px) {
+	.tovarpage__banner {
+		padding: 35px 0;
+	}
+
+	.product_page_section .tovarinfo__side {
+		width: 100%;
+	}
+
+	.product_page_section {
+		margin-bottom: 0;
+	}
+
+	.title {
+		line-height: 1.3;
+	}
+
+	.textures {
+		margin: 0 -5px;
+	}
+
+	.texture-column {
+		flex: 0 1 25%;
+		padding: 0 5px 10px 5px;
+	}
+
+	.textures .texture_blk .title h3 {
+		font-size: 14px;
+		line-height: 1.3;
+	}
+
+	.tovarpage__banner h1 {
+		line-height: 1.3;
+	}
+}
+
+
+
+@media (max-width: 540px) {
+	.texture-column {
+		flex: 0 1 33.333%;
+	}
+}
+
+@media (max-width: 375px) {
+	.sales__action .price {
+		margin-bottom: 20px;
+	}
+
+	.sales__action .fill_btn {
+		width: 100%;
+		padding: 13px 25px;
+	}
+
+	.texture-column {
+		flex: 0 1 50%;
+	}
+}

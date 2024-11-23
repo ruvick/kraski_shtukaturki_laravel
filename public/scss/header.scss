@@ -1,0 +1,305 @@
+.header {
+	position: relative;
+	z-index: 5000;
+	display: flex;
+	flex-direction: column;
+}
+
+.header__top {
+	padding: 10px 0;
+	background-color: #EBEBEB;
+}
+
+// Logo
+.header__logo {
+	margin-right: 30px;
+}
+
+.logo-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 167px;
+	height: 50px;
+	overflow: hidden;
+
+	svg {
+		flex: 0 0 100%;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.menu-list {
+	display: flex;
+	// justify-content: flex-end;
+	flex-wrap: wrap;
+
+	a {
+		display: block;
+		font-size: 16px;
+		font-weight: 500;
+		padding: 5px 0px 5px 61px;
+		transition: all 0.3s ease 0s;
+
+		@media (any-hover: hover) {
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
+}
+
+.header__menu-list {
+	justify-content: flex-end;
+}
+
+.header__popup-link {
+	font-size: 12px;
+}
+
+.header__bottom {
+	padding: 20px 0;
+	background-color: #fff;
+}
+
+.header__bottom-container {
+	display: flex;
+	align-items: center;
+}
+
+.header__search {
+	flex: 0 1 654px;
+	height: 34px;
+	margin-left: auto;
+	margin-right: 82px;
+
+	.search__input {
+		font-size: 16px;
+		font-weight: 300;
+		color: #9D9D9C;
+		height: 34px;
+		padding-left: 18px;
+		border: 0.5px solid #C6C6C6 !important;
+		border-radius: 50px !important;
+	}
+}
+
+.favorit {
+	display: flex;
+	align-items: center;
+	transition: all 0.3s ease 0s;
+	position: relative;
+
+	@media (any-hover: hover) {
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+
+	svg {
+		width: 20px;
+		flex: 0 0 20px;
+		height: 19px;
+		margin-right: 17px;
+	}
+}
+
+.fb_counter {
+	background-color: #CA9E67;
+	color: white;
+	position: absolute;
+	text-align: center;
+	width: 13px;
+	height: 13px;
+	font-size: 8px;
+	line-height: 14px;
+	border-radius: 20px;
+	top: -3px;
+	left: 15px;
+}
+
+.header__favorit {
+	margin-right: 56px;
+}
+
+.bascet {
+	display: flex;
+	align-items: center;
+	transition: all 0.3s ease 0s;
+	position: relative;
+
+	@media (any-hover: hover) {
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+
+	svg {
+		width: 21px;
+		flex: 0 0 21px;
+		height: 19px;
+		margin-right: 17px;
+	}
+}
+
+.header__bascet {}
+
+
+// Стиль иконки бургера
+.icon-menu {
+	display: none;
+	position: sticky;
+	flex: 0 0 20px;
+	height: 14px;
+	cursor: pointer;
+	z-index: 5;
+}
+
+.icon-menu span {
+	position: absolute;
+	top: 6px;
+	left: 0px;
+	width: 100%;
+	height: 2px;
+	background-color: #4E9E79;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+.icon-menu span:first-child {
+	top: 0px;
+}
+
+.icon-menu span:last-child {
+	top: auto;
+	bottom: 0px;
+}
+
+.icon-menu.active span {
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-webkit-transform: scale(0);
+	-o-transform: scale(0);
+	transform: scale(0);
+}
+
+.icon-menu.active span:first-child {
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	top: 7px;
+}
+
+.icon-menu.active span:last-child {
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	bottom: 5px;
+}
+
+// Боковое меню
+.mob-menu {
+	// visibility: hidden;
+	position: fixed;
+	z-index: 500;
+	top: 0;
+	right: -100%;
+	width: 50%;
+	height: 100%;
+	padding: 60px 10px 0px 20px;
+	// background: rgba(0, 0, 0, 0.8);
+	background: #fff;
+	box-shadow: 0px 3px 5px 0px black;
+	-webkit-transition: right 0.8s;
+	-o-transition: right 0.8s;
+	margin-top: 30px;
+	transition: right 0.8s;
+	overflow: auto;
+}
+
+.mob-menu li a {
+	display: inline-block;
+	font-size: 16px;
+	// color: #fff;
+	padding-bottom: 13px;
+}
+
+.mob-menu.active {
+	// visibility: visible;
+	right: 0%;
+}
+
+// Иконка мобильного телефона
+.mob-phone-icon {
+	display: none;
+	flex: 0 0 30px;
+	height: 30px;
+	justify-content: center;
+	align-items: center;
+
+	&:before {
+		content: "";
+		float: left;
+		width: 100%;
+		height: 100%;
+		background-size: 90%;
+		background-position: 0% 100%;
+		background-repeat: no-repeat;
+		background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzg0IDM4NCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzg0IDM4NDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGZpbGw9IiNGQ0EwMUYiIGQ9Ik0zNTMuMTg4LDI1Mi4wNTJjLTIzLjUxLDAtNDYuNTk0LTMuNjc3LTY4LjQ2OS0xMC45MDZjLTEwLjcxOS0zLjY1Ni0yMy44OTYtMC4zMDItMzAuNDM4LDYuNDE3bC00My4xNzcsMzIuNTk0DQoJCQljLTUwLjA3My0yNi43MjktODAuOTE3LTU3LjU2My0xMDcuMjgxLTEwNy4yNmwzMS42MzUtNDIuMDUyYzguMjE5LTguMjA4LDExLjE2Ny0yMC4xOTgsNy42MzUtMzEuNDQ4DQoJCQljLTcuMjYtMjEuOTktMTAuOTQ4LTQ1LjA2My0xMC45NDgtNjguNTgzQzEzMi4xNDYsMTMuODIzLDExOC4zMjMsMCwxMDEuMzMzLDBIMzAuODEzQzEzLjgyMywwLDAsMTMuODIzLDAsMzAuODEzDQoJCQlDMCwyMjUuNTYzLDE1OC40MzgsMzg0LDM1My4xODgsMzg0YzE2Ljk5LDAsMzAuODEzLTEzLjgyMywzMC44MTMtMzAuODEzdi03MC4zMjNDMzg0LDI2NS44NzUsMzcwLjE3NywyNTIuMDUyLDM1My4xODgsMjUyLjA1MnoiDQoJCQkvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K');
+	}
+}
+
+// Мобильный поиск
+.header__mob-search-btn {
+	margin-right: 25px;
+}
+
+// Иконка мобильного поиска
+.mob-search-btn {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	flex: 0 0 30px;
+	width: 30px;
+	height: 30px;
+	background: #4E9E79;
+	border-radius: 50%;
+
+	&:before {
+		content: "";
+		float: right;
+		width: 14px;
+		height: 12px;
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCI+DQogIDxpbWFnZSBpZD0ic2VhcmNoIiB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQTRBQUFBT0NBWUFBQUFmU0MzUkFBQUFCSE5DU1ZRSUNBZ0lmQWhraUFBQUFRUkpSRUZVS0ZPVjBqMHJobUVVQi9EZms4aEtZbFNTUk5tOVpNRElwcFF2UU9RTHlNWmtVVUl5R0pRdndHS3lHS3pLUzhrZ0gwQkdzVHc2ZFYyNnV6eFBQZTdsN3E3enU4KzUvdWVxMWV0MTZlbkJLcWJRZ1FjYzR5a1hWTisxQkNkd2lXNjg0aFBEcVhBRFJ5VU9HSjJlOFlVbDNLU2lmcHhqRXJPNExqdHVZUnZURlpScnV2Q0NPOHlWOEFwREdHaDBGcHhpR1owbGpCSDZNTm9FSHFiUTJrcTRqL1hVOGEzQVVSeXB4dm5IU2ppQ2U5eGlBUitwSU5BZUl0VVZuRFJheHhwaXBIZGNwSFZFR0hIMjZMYUxIWHhublBjWTN6UFlUQmVnSFk4NFFHOUtQZmE4bUhFVk5zbEdqSHlXa3YzRnJjRDQ0Ui9jS3F6aWVZei9CMlk4R0ZmMEJ6Z1BXaFg0TXhhYkFBQUFBRWxGVGtTdVFtQ0MiLz4NCjwvc3ZnPg0K);
+	}
+}
+
+// Строка мобильного поиска
+.header__search-mob {
+	position: fixed;
+	top: -100%;
+	z-index: 50;
+	opacity: 0;
+	transition: all 0.3s ease 0s;
+}
+
+.header__search-mob._active {
+	top: 50px;
+
+	opacity: 1;
+}
+
+
+
+
+//====================================================================================================

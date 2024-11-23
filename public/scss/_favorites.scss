@@ -1,0 +1,40 @@
+
+.favorites_input_section {
+    margin-bottom: 20px;
+}
+
+.empty_favorites:before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/icons/like-orange.svg);
+    background-size: contain;
+    background-repeat:  no-repeat;
+    position: absolute;
+    top:-220px;
+    left:calc( 50% - 100px);
+}
+
+.empty_favorites {
+    width: 300px;
+    margin:  250px auto 0 auto;
+    position: relative;
+    text-align: center;
+}
+
+.to_favorites {
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icons/favorites_btn.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:hover {
+        background-image: url(../img/icons/favorites_btn_fill.svg);
+    }
+
+    &.favorite_fill {
+        background-image: url(../img/icons/favorites_btn_fill_pur.svg);
+    }
+}

@@ -1,0 +1,447 @@
+//<Адаптив>===========================================================================================================================================
+@media (max-width: 1450px) {
+	._container {
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 1280px) {
+	.advantages-slider__column {
+		flex: 0 1 50%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.popular__column {
+		flex: 0 1 33.333%;
+	}
+
+	.box-categories__text {
+		font-size: 20px;
+	}
+
+	.main-category__inner .popular__column {
+		flex: 0 1 50%;
+	}
+
+	.category-sec__sidebar {
+		padding-right: 10px;
+	}
+
+	.filters-sidebar__btn-reset {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 940px) {
+	.category-sec__sidebar {
+		flex: 0 0 40%;
+	}
+
+	.category-sec__main {
+		flex: 0 0 60%;
+	}
+}
+
+@media (max-width: 860px) {
+	.box-categories__text {
+		padding: 15px 30px;
+	}
+
+	.footer__top {
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.footer__logo {
+		margin-bottom: 25px;
+	}
+
+	.footer__bottom {
+		padding-top: 15px;
+	}
+}
+
+@media (max-width: 812px) {
+	.category-sec__wrap {
+		flex-wrap: wrap;
+	}
+
+	.category-sec__sidebar {
+		flex: 0 1 100%;
+		margin-bottom: 25px;
+	}
+
+	.category-sec__main {
+		flex: 0 1 100%;
+	}
+
+	.main-category__inner .popular__column {
+		flex: 0 1 33.333%;
+	}
+
+	.filter-block__btn {
+		padding: 8px 33px;
+		flex: 1 1 auto;
+	}
+
+	.category-sec__sidebar {
+		padding-right: 0;
+	}
+
+	.main-category__inner {
+		margin: 0px;
+	}
+
+	.popular__column {
+		padding: 0 5px 24px 5px;
+	}
+}
+
+@media (max-width: 768px) {
+	.header {
+		position: fixed;
+		width: 100%;
+		padding: 0;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	}
+
+	.header__top {
+		display: none;
+	}
+
+	.header__logo {
+		flex: 0 0 100px;
+		height: 25px;
+		margin-right: 20px;
+	}
+
+	.logo-icon:before {
+		flex: 0 0 100%;
+		height: 100%;
+	}
+
+	.logo-icon p {
+		display: none;
+	}
+
+	.icon-menu {
+		display: flex;
+	}
+
+	.header__menu-block {
+		margin-right: 15px;
+	}
+
+	.header__menu-list {
+		display: none;
+	}
+
+	.header__search form {
+		max-height: 30px;
+	}
+
+	.header__contacts {
+		flex: 0 0 133px;
+		margin-left: auto;
+		margin-right: 15px;
+	}
+
+	.header__phone {
+		font-size: 18px;
+	}
+
+	.header__time-phone {
+		display: none;
+	}
+
+	.header__popup-link {
+		display: none;
+	}
+
+	.header__popup-link_mob {
+		display: flex;
+		margin-left: 0;
+	}
+
+	.section {
+		padding: 20px 0 !important;
+	}
+
+	.title {
+		margin-bottom: 15px;
+	}
+
+	::-webkit-scrollbar {
+		display: none;
+	}
+
+	.icon-menu {
+		margin-left: 15px;
+	}
+
+	.header__bascet,
+	.header__favorit {
+		font-size: 0;
+	}
+
+	.header__favorit {
+		margin-right: 0;
+	}
+
+	.header__bascet svg {
+		margin-right: 0px;
+	}
+
+	.header__search {
+		margin-right: 15px;
+	}
+
+	.header__bottom {
+		padding: 10px 0;
+	}
+
+	.page {
+		padding: 50px 0;
+	}
+
+	.main-banner {
+		padding: 60px 0 !important;
+		min-height: auto;
+	}
+
+	.main-banner ._container {
+		justify-content: start;
+	}
+
+	.main-banner__title {
+		text-align: left;
+		max-width: 100%;
+	}
+
+	.popular__column {
+		flex: 0 1 50%;
+	}
+
+	.consult__title {
+		line-height: 1.2;
+		margin-bottom: 15px;
+	}
+
+	.consult__subtitle {
+		font-weight: 400;
+	}
+
+	.consult__form {
+		max-width: 70%;
+		width: 100%;
+	}
+
+	.box-categories__text {
+		font-size: 14px;
+		line-height: 1.3;
+		padding: 10px 25px;
+		min-height: auto;
+	}
+
+	.advantages-slider__column {
+		flex: 0 1 100%;
+	}
+
+	.filter-block__btn {
+		flex: 0 1 50%;
+	}
+
+	.banner-category ._container {
+		justify-content: start;
+	}
+
+	.banner-category {
+		padding: 45px 0;
+	}
+
+	.banner-category__title {
+		max-width: 100%;
+		text-align: left;
+		line-height: 1.3;
+        text-transform: uppercase;
+	}
+
+	.sidebar__filters {
+		display: none;
+	}
+
+	.sidebar__filters.active {
+		display: block;
+	}
+}
+
+@media (max-width: 700px) {
+	.mob-menu {
+		width: 100%;
+		right: -100%;
+		-webkit-transition: right 0.8s;
+		-o-transition: right 0.8s;
+		transition: right 0.8s;
+	}
+}
+
+@media (max-width: 630px) {
+	.main-category__inner .popular__column {
+		flex: 0 1 50%;
+		padding: 0 5px 10px 5px;
+	}
+
+	.filter-block__btn {
+		flex: 0 1 100%;
+	}
+}
+
+.main-category__inner {
+	margin: 0 -5px;
+}
+
+@media (max-width: 612px) {
+	.popup__img {
+		flex: 0 1 43%;
+	}
+
+	.popup__form-block {
+		padding: 35px 15px;
+	}
+}
+
+@media (max-width: 540px) {
+	.categories__inner {
+		flex-wrap: wrap;
+	}
+
+	.categories__left-col,
+	.categories__right-col {
+		flex: 0 1 100%;
+	}
+
+	.box-categories--center {
+		flex: 0 1 100%;
+		margin: 10px 0;
+	}
+
+	.box-categories__text {
+		width: 100%;
+		border-radius: 0;
+		bottom: 0;
+	}
+
+	.category-sec__main .pagination {
+		display: none;
+	}
+}
+
+@media (max-width: 515px) {
+	.header__contacts {
+		display: none;
+	}
+
+	.header__mob-phone-icon {
+		display: flex;
+		margin-right: 25px;
+	}
+
+	.popup__img {
+		display: none;
+	}
+
+	.popup__form-block {
+		flex: 0 1 100%;
+	}
+
+	.consult__form {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	.header__search {
+		display: none;
+	}
+
+	.header__mob-search-btn {
+		display: flex;
+		margin-left: auto;
+	}
+
+	.header__search.active {
+		display: block;
+		position: absolute;
+		top: 50px;
+		left: 0;
+		max-width: 100%;
+		box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+		margin: 0;
+	}
+
+	.search__input {
+		border-radius: 0 !important;
+	}
+
+	.main-banner__title {
+		font-size: 36px;
+		line-height: 46px;
+	}
+
+	.main-banner {
+		padding: 30px 0 !important;
+	}
+
+	.popular__inner {
+		margin: 0 -5px;
+	}
+
+	.popular__column {
+		flex: 0 1 50%;
+	}
+
+	.header__mob-search-btn {
+		margin-right: 15px;
+	}
+
+	.header__search-mob {
+		top: -4px;
+	}
+}
+
+@media (max-width: 414px) {
+	.popular__column {
+		flex: 0 1 100%;
+	}
+
+	.btn {
+		width: 100%;
+	}
+
+	.item-advantages__icon {
+		display: none;
+	}
+
+	.item-advantages__descp {
+		padding: 25px;
+		border-radius: 0;
+		margin-left: 0;
+	}
+
+	.main-category__inner .popular__column {
+		flex: 0 1 100%;
+	}
+}
+
+@media (max-width: 375px) {
+	.main-banner__title {
+		font-size: 26px;
+		line-height: 36px;
+	}
+
+	.sidebar__title {
+		font-size: 26px;
+		margin-bottom: 15px;
+	}
+}
